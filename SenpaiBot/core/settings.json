@@ -1,0 +1,21 @@
+{
+    "0": {
+        "GLOBAL": {
+            "schema_version": 1,
+            "token": "NDc4NzM2ODcwODE4NDQ3Mzcw.XTSb7g.rLI5VZj3FZQUZakp9v1xJhxOcxI",
+            "prefix": [
+                "//"
+            ]
+        },
+        "CUSTOM_GROUPS": {
+            "Core": {
+                "0": {
+                    "CUSTOM_GROUPS": 2
+                }
+            },
+            "CogManager": {
+                "2938473984732": {}
+            }
+        }
+    }
+}

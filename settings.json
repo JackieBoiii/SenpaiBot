@@ -1,0 +1,42 @@
+{
+    "0" : {
+        "GLOBAL" : {
+            "token" : "NDc4NzM2ODcwODE4NDQ3Mzcw.D2oMMQ.KDyAEf4R5dndTlcWmbdgsVTcKfs",
+            "prefix" : [
+                "//"
+            ],
+            "enable_sentry" : true,
+            "packages" : [
+                "downloader",
+                "admin",
+                "permissions",
+                "warnings",
+                "mod",
+                "general",
+                "streams",
+                "bank",
+                "image",
+                "modlog",
+                "massdm",
+                "welcome",
+                "customcom"
+            ],
+            "embeds" : true
+        },
+        "GUILD" : {
+            "518748974648131584" : {
+                "autoimmune_ids" : [
+                    218110237574430722
+                ]
+            },
+            "597481031364509728" : {
+                "embeds" : null
+            }
+        },
+        "USER" : {
+            "333972753659068416" : {
+                "embeds" : null
+            }
+        }
+    }
+}

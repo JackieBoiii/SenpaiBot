@@ -1,9 +1,0 @@
-{
-    "Senpai": {
-        "DATA_PATH": "C:\\Users\\deadsho2kgmail.com\\AppData\\Local\\Red-DiscordBot\\Red-DiscordBot",
-        "COG_PATH_APPEND": "cogs",
-        "CORE_PATH_APPEND": "core",
-        "STORAGE_TYPE": "JSON",
-        "STORAGE_DETAILS": {}
-    }
-}

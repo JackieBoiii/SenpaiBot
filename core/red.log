@@ -1,0 +1,80 @@
+[13/03/2019 04:49] ERROR events on_command_error 202: Exception in command 'set'
+Traceback (most recent call last):
+  File "C:\Users\deadsho2kgmail.com\AppData\Roaming\Python\Python36\site-packages\discord\ext\commands\core.py", line 60, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\deadsho2kgmail.com\AppData\Local\Programs\Python\Python36\lib\site-packages\redbot\core\core_commands.py", line 622, in _set
+    guild.get_role(await ctx.bot.db.guild(ctx.guild).admin_role()) or "Not set"
+AttributeError: 'Guild' object has no attribute 'get_role'
+[13/03/2019 04:49] ERROR events on_command_error 207: Exception in command 'set'
+Traceback (most recent call last):
+  File "C:\Users\deadsho2kgmail.com\AppData\Roaming\Python\Python36\site-packages\discord\ext\commands\core.py", line 60, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\deadsho2kgmail.com\AppData\Local\Programs\Python\Python36\lib\site-packages\redbot\core\core_commands.py", line 622, in _set
+    guild.get_role(await ctx.bot.db.guild(ctx.guild).admin_role()) or "Not set"
+AttributeError: 'Guild' object has no attribute 'get_role'
+[13/03/2019 04:51] ERROR events on_command_error 202: Exception in command 'set'
+Traceback (most recent call last):
+  File "C:\Users\deadsho2kgmail.com\AppData\Roaming\Python\Python36\site-packages\discord\ext\commands\core.py", line 60, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\deadsho2kgmail.com\AppData\Local\Programs\Python\Python36\lib\site-packages\redbot\core\core_commands.py", line 622, in _set
+    guild.get_role(await ctx.bot.db.guild(ctx.guild).admin_role()) or "Not set"
+AttributeError: 'Guild' object has no attribute 'get_role'
+[13/03/2019 04:51] ERROR events on_command_error 207: Exception in command 'set'
+Traceback (most recent call last):
+  File "C:\Users\deadsho2kgmail.com\AppData\Roaming\Python\Python36\site-packages\discord\ext\commands\core.py", line 60, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\deadsho2kgmail.com\AppData\Local\Programs\Python\Python36\lib\site-packages\redbot\core\core_commands.py", line 622, in _set
+    guild.get_role(await ctx.bot.db.guild(ctx.guild).admin_role()) or "Not set"
+AttributeError: 'Guild' object has no attribute 'get_role'
+[10/05/2019 15:46] ERROR events on_command_error 202: Exception in command 'repo add'
+Traceback (most recent call last):
+  File "C:\Users\deadsho2kgmail.com\AppData\Local\Programs\Python\Python36\lib\pathlib.py", line 1246, in mkdir
+    self._accessor.mkdir(self, mode)
+  File "C:\Users\deadsho2kgmail.com\AppData\Local\Programs\Python\Python36\lib\pathlib.py", line 387, in wrapped
+    return strfunc(str(pathobj), *args)
+OSError: [WinError 123] The filename, directory name, or volume label syntax is incorrect: 'C:\\Users\\deadsho2kgmail.com\\AppData\\Local\\Red-DiscordBot\\Red-DiscordBot\\cogs\\RepoManager\\repos\\https:\\github.com\\aikaterna\\aikaterna-cogs'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\deadsho2kgmail.com\red-venv\lib\site-packages\discord\ext\commands\core.py", line 79, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "c:\users\deadsho2kgmail.com\red-venv\lib\site-packages\redbot\cogs\downloader\downloader.py", line 230, in _repo_add
+    repo = await self._repo_manager.add_repo(name=name, url=repo_url, branch=branch)
+  File "c:\users\deadsho2kgmail.com\red-venv\lib\site-packages\redbot\cogs\downloader\repo_manager.py", line 585, in add_repo
+    r = Repo(url=url, name=name, branch=branch, folder_path=self.repos_folder / name)
+  File "c:\users\deadsho2kgmail.com\red-venv\lib\site-packages\redbot\cogs\downloader\repo_manager.py", line 66, in __init__
+    self.folder_path.mkdir(parents=True, exist_ok=True)
+  File "C:\Users\deadsho2kgmail.com\AppData\Local\Programs\Python\Python36\lib\pathlib.py", line 1255, in mkdir
+    if not exist_ok or not self.is_dir():
+  File "C:\Users\deadsho2kgmail.com\AppData\Local\Programs\Python\Python36\lib\pathlib.py", line 1346, in is_dir
+    return S_ISDIR(self.stat().st_mode)
+  File "C:\Users\deadsho2kgmail.com\AppData\Local\Programs\Python\Python36\lib\pathlib.py", line 1156, in stat
+    return self._accessor.stat(self)
+  File "C:\Users\deadsho2kgmail.com\AppData\Local\Programs\Python\Python36\lib\pathlib.py", line 387, in wrapped
+    return strfunc(str(pathobj), *args)
+OSError: [WinError 123] The filename, directory name, or volume label syntax is incorrect: 'C:\\Users\\deadsho2kgmail.com\\AppData\\Local\\Red-DiscordBot\\Red-DiscordBot\\cogs\\RepoManager\\repos\\https:\\github.com\\aikaterna\\aikaterna-cogs'
+[10/05/2019 16:03] ERROR downloader _repo_add 239: Something went wrong whilst cloning https://cogboard.red/t/approved-repositories/210 (to revision: None)
+Traceback (most recent call last):
+  File "c:\users\deadsho2kgmail.com\red-venv\lib\site-packages\redbot\cogs\downloader\downloader.py", line 230, in _repo_add
+    repo = await self._repo_manager.add_repo(name=name, url=repo_url, branch=branch)
+  File "c:\users\deadsho2kgmail.com\red-venv\lib\site-packages\redbot\cogs\downloader\repo_manager.py", line 586, in add_repo
+    await r.clone()
+  File "c:\users\deadsho2kgmail.com\red-venv\lib\site-packages\redbot\cogs\downloader\repo_manager.py", line 224, in clone
+    raise errors.CloningError("Error when running git clone.")
+redbot.cogs.downloader.errors.CloningError: Error when running git clone.
+[10/05/2019 16:31] WARNING massdm massdm 41: Failed to DM user Dyno#3861 (ID 155149108183695360): insufficient permissions
+[10/05/2019 16:31] WARNING massdm massdm 41: Failed to DM user Groovy#7254 (ID 234395307759108106): insufficient permissions
+[10/05/2019 16:32] WARNING massdm massdm 41: Failed to DM user DISBOARD#2760 (ID 302050872383242240): insufficient permissions
+[10/05/2019 16:32] WARNING massdm massdm 41: Failed to DM user Mr. Mop#0421 (ID 408766981907415040): insufficient permissions
+[10/05/2019 16:32] WARNING massdm massdm 44: Failed to DM user Senpai#9231 (ID 478736870818447370)
+[10/05/2019 16:32] WARNING massdm massdm 41: Failed to DM user Cryptonix X#5788 (ID 482128001828651008): insufficient permissions
+[10/05/2019 16:32] WARNING massdm massdm 41: Failed to DM user Ghostplay#8438 (ID 533656860297920522): insufficient permissions
+[17/07/2019 19:52] WARNING massdm massdm 41: Failed to DM user Dyno#3861 (ID 155149108183695360): insufficient permissions
+[17/07/2019 19:52] WARNING massdm massdm 41: Failed to DM user Groovy#7254 (ID 234395307759108106): insufficient permissions
+[17/07/2019 19:52] WARNING massdm massdm 41: Failed to DM user DISBOARD#2760 (ID 302050872383242240): insufficient permissions
+[17/07/2019 19:52] WARNING massdm massdm 41: Failed to DM user Mr. Mop#0421 (ID 408766981907415040): insufficient permissions
+[17/07/2019 19:52] WARNING massdm massdm 41: Failed to DM user Member Count#7205 (ID 432533456807919639): insufficient permissions
+[17/07/2019 19:52] WARNING massdm massdm 44: Failed to DM user Senpai#7023 (ID 478736870818447370)
+[17/07/2019 19:52] WARNING massdm massdm 41: Failed to DM user Cryptonix X#5788 (ID 482128001828651008): insufficient permissions
+[17/07/2019 19:52] WARNING massdm massdm 41: Failed to DM user Ghostplay#8438 (ID 533656860297920522): insufficient permissions
